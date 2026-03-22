@@ -1,0 +1,229 @@
+body {
+    background-color: #F3F3F3;
+    margin: 0 auto;
+    margin-top: 80px;
+    align-items: center;
+    }
+    
+header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 4px 6px 5px #0000000D;
+    }
+    
+header img {
+    width: 82px;
+    height: 60px;
+    margin-left: 22px;
+    }
+    
+header ion-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 22px;
+    cursor: pointer;
+    }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80vw;
+    max-width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    transition: right 0.3s ease-in-out;
+}
+
+.sidebar.aberto {
+    right: 0;
+}
+
+#sombra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 15;
+}
+
+#sombra.aberto {
+    display: block;
+}
+
+.usuario, .usuarios, .visibilidade-opcoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuarios, .visibilidade-opcoes {
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+}
+
+.titulo-contato, .titulo-visibilidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 84px;
+}
+
+.titulo-contato h1, .titulo-visibilidade h1 {
+    font: 700 16px 'Roboto', serif;
+    line-height: 18.75px;
+    text-align: center;
+}
+
+.contato-todos, .usuarios-online, .mensagem-publica, .mensagem-privada {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.contato-todos.escolhido,
+.usuarios-online.escolhido,
+.mensagem-publica.escolhido,
+.mensagem-privada.escolhido {
+    border-radius: 5px;
+}
+
+ion-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.escreva-aqui {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 60px;
+    background-color: #FFFFFF;
+    box-shadow: 0px -4px 6px 0px #0000000D;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+textarea {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    resize: none;
+    margin-right: 10px;
+}
+
+textarea::placeholder {
+    color: black;
+    font: 400 18px 'Roboto', serif;
+    line-height: 25px;
+}
+
+.enviar-mensagem ion-icon {
+    cursor: pointer;
+}
+
+#mensagens-container {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.mensagem {
+    min-height: 35px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+.mensagem strong {
+    font-weight: bold;
+}
+
+.tempo {
+    color: gray;
+    margin-right: 5px;
+}
+
+.mensagem.status {
+    background-color: #EAEAEA;
+    color: black;
+    font: 400 14px 'Roboto', serif;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: center; 
+    width: 100%; 
+}
+
+.mensagem.publica {
+    background-color: white;
+    color: black;
+    font: 400 14px 'Roboto', serif;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: center; 
+    width: 100%; 
+}
+
+.mensagem.privada {
+    background-color: #F8D7DA;
+    color: black;
+    font: 400 14px 'Roboto', serif;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: center; 
+    width: 100%; 
+}
+
+.texto {
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+    color: #505050;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+
+.check {
+    display: none;
+    color: green;
+    margin-left: 150px;
+}
+
+.mensagem-privada .check{
+    margin-left: 99px;
+}
+
+.escolhido .check {
+    display: inline-block;
+}
