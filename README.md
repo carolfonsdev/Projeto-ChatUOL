@@ -4,7 +4,7 @@
 
 This project is a clone of the classic Brazilian chat platform UOL, developed as part of the Driven course (Module 6). The focus was on consuming a REST API, handling real-time data with JavaScript, and building a dynamic chat experience with DOM manipulation.
 
-🔗 **Live Demo:** [[projeto-chat-uol.vercel.app]([https://vercel.com/carolfonsdevs-projects/projeto-chat-uol/32b1mHL9qKGpuPP3buHCBVzHTpgv](https://projeto-chat-uol.vercel.app)](https://projeto-chat-uol.vercel.app))](https://projeto-chat-uol.vercel.app/)
+🔗 **Live Demo:** [projeto-chat-uol.vercel.app](https://projeto-chat-uol.vercel.app/)
 
 ---
 
@@ -32,8 +32,11 @@ This project is a clone of the classic Brazilian chat platform UOL, developed as
 
 ```bash
 /
-├── Chat UOL/
+├── ChatUOL/
+│   ├── imagem/
+│   │   └── logo.png
 │   ├── index.html   # Main page structure
+│   ├── reset.css    # Style reset
 │   ├── style.css    # Layout and styling
 │   └── script.js    # Chat logic, API calls and DOM manipulation
 └── README.md
